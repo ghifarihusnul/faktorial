@@ -1,0 +1,45 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package faktorial;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Praktikum
+ */
+ public class Faktorial {
+    public static void main(String [ ] args) {
+
+String hasilX=" ";
+boolean angka=false;
+int hasil=1;
+int f = 0;
+
+
+while (!angka) {
+    try {
+     f=Integer.parseInt(JOptionPane.showInputDialog("Masukkan Angka : "));
+
+    angka=true;
+    } catch (Exception e) {
+    JOptionPane.showMessageDialog(null,"Bukan Angka");
+    }
+ }
+     for(int i=f;i>=1;i--) {
+    
+    hasil=hasil*i;
+    if (1<i)
+    hasilX=hasilX+i + " x ";
+    else
+    hasilX= hasilX+i ;
+    }
+     
+JOptionPane.showMessageDialog(null,""+f+"! ="+hasilX +" = " +hasil);
+System.exit(0);
+}
+}
