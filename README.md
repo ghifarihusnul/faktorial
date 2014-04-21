@@ -1,0 +1,4 @@
+faktorial
+=========
+
+faktorial
